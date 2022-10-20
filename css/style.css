@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://img.freepik.com/premium-photo/hong-kong-city-skyline-with-victoria-harbor-view-twilight-from-top-view_255553-1300.jpg?w=1380);
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container .header-default {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.container .logo {
+  width: 200px;
+  height: 100%;
+}
+
+.container .logo img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #c5450c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.userProfile .avatar {
+  width: 30px;
+  height: 30px;
+  color: aqua;
+  position: relative;
+}
+
+.container .main {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main div p {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 1000;
+  color: red;
+  text-shadow: 2px 2px #fff;
+}
+
+.main div p:first-child {
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.container .login-modal,
+.container .register-modal {
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  background: #fff;
+  border-radius: 5px;
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+
+.form p {
+  padding: 10px;
+  color: #fff;
+  font-weight: 100;
+  background-color: #c5450c;
+}
+
+.form .form-element {
+  padding: 10px 30px;
+}
+
+.form .form-element input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.form .form-element:last-child {
+  text-align: right;
+}
+
+.show-modal {
+  position: absolute;
+  top: 50% !important;
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+
+.container .userProfile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  display: none;
+}
+
+.container .userProfile .userName {
+  color: #fff;
+  font-weight: 600;
+}
+
+.container .userProfile ul {
+  list-style: none;
+  position: absolute;
+  width: 10%;
+  right: 2%;
+  padding: 5px 10px;
+  background: #fff;
+  border-radius: 15px 0 15px 15px;
+}
+
+.userProfile .avatar {
+  width: 30px;
+  height: 30px;
+  color: aqua;
+}
+
+.userProfile ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.userProfile .sub-nav ul {
+  display: none;
+}
+
+.userProfile .sub-nav:hover ul {
+  display: block;
+}
+
+.active {
+  display: flex !important;
+}
+
+.inactive {
+  display: none;
+}
+
+.container footer {
+  background-color: #c5450c;
+  padding: 5px;
+  text-align: center;
+}
+
+.container footer p {
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 1, 0.65);
+}

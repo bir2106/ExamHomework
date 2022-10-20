@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container .form {
+  width: 30vw;
+  margin: 10vh auto;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.container .form h2,
+.container .form .row-item {
+  margin-bottom: 15px;
+}
+.container .form .row-item {
+  display: flex;
+}
+
+.container .form .row-item label,
+.container .form .row-item input,
+.container .form .btnArea button {
+  width: 200px;
+}
+
+/* .container .form .row-item input {
+  flex-shrink: 0;
+}
+
+.container .form .row-item label {
+  margin-right: 10px;
+} */
+
+.container .form .btnArea {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.container .form .btnArea button {
+  width: 100%;
+  background-color: royalblue;
+  color: #fff;
+}
+
+.tblBill {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.tblBill thead th,
+.tblBill tbody td {
+  border: 1px solid black;
+  width: 150px;
+}
+
+.table {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.table button {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.error-msg-start,
+.error-msg-end {
+  display: block;
+  color: red;
+  width: 200px;
+}
